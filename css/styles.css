@@ -26,6 +26,24 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* Шапка */
 
 .main-header {
@@ -355,6 +373,40 @@ img {
   overflow: hidden;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #2196f3;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
+}
+
 /* Постоянные клиенты */
 
 .regular-customers {
@@ -394,7 +446,11 @@ img {
 .regular-customers-block .link:hover .regular-customers-block-icon,
 .regular-customers-block .link:focus .regular-customers-block-icon {
   fill: #2196f3;
-  color: #2196f3;
+}
+
+.regular-customers-block .link:hover,
+.regular-customers-block .link:focus {
+  border-color: #2196f3;
 }
 
 /* Подвал */
@@ -441,9 +497,64 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 70px;
+  width: 206px;
+}
+
+.footer-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: #2196f3;
+}
+
+/* .footer-social-list-link:hover .footer-social-list-icon,
+.footer-social-list-link:focus .footer-social-list-icon {
+  fill: #ffffff; */
+
 /* Портфолио */
 
-.line {
+.line-portfolio {
   border: none;
   background-color: #ececec;
   height: 2px;
