@@ -103,6 +103,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.site-contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .site-contact .item + .item {
   margin-left: 50px;
 }
@@ -117,13 +122,28 @@ img {
   color: #2196f3;
 }
 
+.site-contact .link:hover .site-contact-icon,
+.site-contact .link:focus .site-contact-icon {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
 /* Герой */
 
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../imges/header-fon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -156,6 +176,12 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 
 /* Особенности */
@@ -175,6 +201,33 @@ img {
 .features .item {
   flex-basis: calc(100% / 4);
   margin-right: 30px;
+}
+
+.features .item::before {
+  content: '';
+  height: 120px;
+  display: block;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.features .item:nth-child(1)::before {
+  background-image: url(../imges/antenna.svg);
+}
+
+.features .item:nth-child(2)::before {
+  background-image: url(../imges/clock.svg);
+}
+
+.features .item:nth-child(3)::before {
+  background-image: url(../imges/diagram.svg);
+}
+
+.features .item:nth-child(4)::before {
+  background-image: url(../imges/astronaut.svg);
 }
 
 .features .item:last-child {
@@ -300,6 +353,48 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+}
+
+/* Постоянные клиенты */
+
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-customers-block {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.regular-customers-block .item {
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.regular-customers-block .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.regular-customers-block .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-customers-block-icon {
+  fill: #afb1b8;
+}
+
+.regular-customers-block .link:hover .regular-customers-block-icon,
+.regular-customers-block .link:focus .regular-customers-block-icon {
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 /* Подвал */
@@ -433,6 +528,7 @@ img {
   border: 0;
   padding: 6px 22px 6px 22px;
   color: #212121;
+  cursor: pointer;
 }
 
 .button-filtr:hover,
