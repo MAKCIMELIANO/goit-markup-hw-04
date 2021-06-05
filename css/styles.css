@@ -375,10 +375,12 @@ ol {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 16px;
   margin-bottom: 0;
+  margin-left: 32px;
   padding-left: 0;
+  width: 206px;
 }
 
 .social-list-link {
